@@ -427,7 +427,8 @@
     <audio
       src="seandainya.mp3"
       id="linkmp3"
-      class="sembunyi"
+      autoplay loop preload="auto"
+      style="display:none"
     ></audio>
 
     <section class="first">
@@ -795,11 +796,10 @@
       let tinggi = iniakhir.offsetHeight;
       console.log(tinggi);
 
-      fungsiAud = 0;
       function playaud() {
         if (fungsiAud == 0) {
-          fungsiAud = 1;
-          audio.play();
+        fungsiAud = 1;
+        audio.play();
         }
       }
 
@@ -900,5 +900,6 @@
     </script>
   </body>
 </html>
+
 
 
